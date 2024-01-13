@@ -12,11 +12,13 @@ const Footer = () => {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        backgroundColor: "primary.main",
+        backgroundColor: "#141414",
         color: "white",
       }}
     >
-      <Typography>{format(new Date(), "yyyy")}. All rights reserved</Typography>
+      <Typography>
+        © {format(new Date(), "yyyy")}. All rights reserved
+      </Typography>
       <Box sx={{ display: "flex", gap: "15px" }}>
         <TelegramIcon sx={{ cursor: "pointer" }} />
         <InstagramIcon sx={{ cursor: "pointer" }} />
